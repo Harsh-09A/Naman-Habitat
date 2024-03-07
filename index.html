@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naman Habitat</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo/favicon.png" sizes="16x16" />
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"></script>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <!-- Fancy Box CDN -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <!-- EmailJS CDN -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/mail.js"></script>
+
+    <!-- Slick Slider   -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <script
+      defer
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Custom CSS & JS  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#main-navbar"
+    data-bs-root-margin="0px 0px -50%"
+    data-bs-smooth-scroll="true"
+    class="scrollspy"
+    tabindex="0"
+    data-offset="1">
+    <!-- Header -->
+    <header class="fixed-top shadow-sm">
+      <nav
+        class="navbar navbar-expand-lg mx-auto"
+        style="background-color: #ffffff"
+        id="main-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo/logo.png" alt="Logo" height="80px" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"> </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#slider_section">
+                  <i class="fa-solid fa-house nav-icon"></i>
+                  <span class="d-sm-inline"> Home </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#overview_section">
+                  <i class="fa-solid fa-coins nav-icon"></i>
+                  <span class="d-sm-inline"> Overview </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery_section">
+                  <i class="fa-solid fa-images nav-icon"></i>
+                  <span class="d-sm-inline"> Gallery </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing_section">
+                  <i class="fa-solid fa-sliders nav-icon"></i>
+                  <span class="d-sm-inline"> Pricing </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#amenities_section">
+                  <i class="fa-solid fa-wifi nav-icon"></i>
+                  <span class="d-sm-inline"> Amenities </span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#location_section">
+                  <i class="fa-solid fa-map-location nav-icon"></i>
+                  <span class="d-sm-inline"> Location </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about_section">
+                  <i class="fa-solid fa-user nav-icon"></i>
+                  <span class="d-sm-inline"> About Us </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Slider Section -->
+      <section id="slider_section">
+        <div
+          id="carousel-Indicators"
+          class="carousel slide desktop-slider"
+          data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel-Indicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-Indicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-Indicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100 banner1"
+                width="100%"
+                src="img/banner/banner1.webp"
+                alt="Banner1" />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100 banner2"
+                width="100%"
+                src="img/banner/banner2.webp"
+                alt="Banner2" />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100 banner3"
+                width="100%"
+                src="img/banner/banner3.webp"
+                alt="Banner2" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Overview Section  -->
+      <section id="overview_section" class="container p-4 mt-3">
+        <h2 class="section-heading text-center text-uppercase">Overview</h2>
+        <h3 class="sub-heading text-center">Naman Habitat</h3>
+
+        <div class="row mt-4">
+          <div class="col-12 col-md-6 overview_img">
+            <img class="img-fluid" src="img/overview/overview.jpg" alt="" />
+          </div>
+          <div class="col-12 col-md-6">
+            <p class="overview-para mt-3">
+              Discover luxurious living at Naman Habitat in the heart of Mumbai,
+              These thoughtfully designed 2 and 3 BHK apartments offer elegance
+              and comfort, with every detail crafted to the highest standards of
+              luxury. With unbeatable connectivity, this prestigious complex on
+              JP Road, Andheri (W) is the epitome of sophistication and
+              opulence. Divinity comes home with Jain Temple in the premises.
+              Enjoy the abundance of lavish lifestyle amenities available on the
+              podium and rooftop, providing a truly unmatched experience. At
+              this residential landmark, every moment is a testament to the art
+              of luxurious living Naman Habitat in Andheri (West), Mumbai
+              Andheri-Dahisar is a ready-to-move housing society. It offers
+              apartments in varied budget ranges. These units are a perfect
+              combination of comfort and style, specifically designed to suit
+              your requirements and conveniences. There are 2BHK and 3BHK
+              apartments available in this project.
+            </p>
+            <button
+              class="btn btn-outline-dark download_btn"
+              data-bs-toggle="modal"
+              data-bs-target="#popupModal">
+              <i class="fa-solid fa-download nav-icon"></i> Download Brochure
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery_section" class="container p-4 mt-3">
+        <div>
+          <h2 class="section-heading">GALLERY</h2>
+        </div>
+
+        <!-- Gallery -->
+        <div class="container">
+          <div class="row autoplay_gal">
+            <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+              <img
+                class="img-fluid"
+                data-fancybox="gallery"
+                src="img/gallery/gallery01.jpg"
+                data-src="img/gallery/gallery01.jpg"
+                alt="" />
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+              <img
+                class="img-fluid"
+                data-fancybox="gallery"
+                src="img/gallery/gallery02.jpg"
+                data-src="img/gallery/gallery02.jpg"
+                alt="" />
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+              <img
+                class="img-fluid"
+                data-fancybox="gallery"
+                src="img/gallery/gallery03.jpg"
+                data-src="img/gallery/gallery03.jpg"
+                alt="" />
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+              <img
+                class="img-fluid"
+                data-fancybox="gallery"
+                src="img/gallery/gallery04.jpg"
+                data-src="img/gallery/gallery04.jpg"
+                alt="" />
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+              <img
+                class="img-fluid"
+                data-fancybox="gallery"
+                src="img/gallery/gallery05.jpg"
+                data-src="img/gallery/gallery05.jpg"
+                alt="" />
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+              <img
+                class="img-fluid"
+                data-fancybox="gallery"
+                src="img/gallery/gallery06.jpg"
+                data-src="img/gallery/gallery06.jpg"
+                alt="" />
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+              <img
+                class="img-fluid"
+                data-fancybox="gallery"
+                src="img/gallery/gallery07.jpg"
+                data-src="img/gallery/gallery07.jpg"
+                alt="" />
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3 g-3 gal-img">
+              <img
+                class="img-fluid"
+                data-fancybox="gallery"
+                src="img/gallery/gallery08.jpg"
+                data-src="img/gallery/gallery08.jpg"
+                alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+  </body>
+</html>
