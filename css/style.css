@@ -29,8 +29,8 @@ html {
 #f0c021
 */
 :root {
-  --colorPrimary: #b19652;
-  --colorSecondary: #f0c021;
+  --colorPrimary: #66c3d0;
+  --colorSecondary: #02495f;
   --colorWhite: #ffffff;
   --colorOffWhite: #f7f7f7;
   --colorBorderWhite: #dbe4e9;
@@ -43,9 +43,6 @@ html {
   --colorBrownBackground: #504140;
   --colorBrown: #372e28;
   --colorWhatsApp: #42db87;
-
-  --highlightsBorder: #a45a52;
-  --highlightsBackground: #a45a52;
 }
 
 /* Navbar */
@@ -144,11 +141,135 @@ html {
 /* Gallery */
 .gal-img {
   /* width: 19em !important; */
-  height: 200px;
+  height: 200px !important;
   border-radius: 20px;
 }
 .gal-img img {
   width: 100% !important;
-  height: 100%;
+  height: 200px;
   border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Pricing */
+#pricing_section {
+  background-image: url(../img/overview/overview.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* padding: auto;    */
+}
+
+.price_overlay {
+  background-color: var(--colorBackgroundOverlay);
+}
+
+.conf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.card-wrap {
+  width: 90%;
+  height: 270px;
+  border-radius: 10px;
+  position: relative;
+  background-color: var(--colorPrimary);
+  text-align: center;
+}
+
+.card-wrap .card-header {
+  width: 150px;
+  height: 105px;
+  background: #ffffff;
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(0 0, 100% 0%, 100% 75%, 50% 100%, 0 75%);
+}
+
+.card-wrap .card-header h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 21px;
+  color: var(--color-text1);
+  margin-top: -10px;
+}
+
+.card-wrap .card-content {
+  width: 80%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.card-wrap .card-content-option {
+  color: white;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card-wrap .card-footer {
+  width: 160px;
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  border-radius: 10px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.card-wrap .card-footer button {
+  border: 1px solid var(--colorBlack);
+  border-radius: 5px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 12px;
+  background: transparent;
+}
+.pricing-text {
+  color: var(--colorBlack) !important;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: "Roboto";
+}
+
+/* Amenities */
+
+.amenities_wrapper figure {
+  max-width: 100%;
+  vertical-align: top;
+  position: relative;
+  overflow: hidden;
+}
+
+.amenities_wrapper figure img:hover {
+  transform: scale(1.1);
+}
+
+.amenities_wrapper figcaption {
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  background: var(--colorPrimary);
+}
+.amenities_wrapper figcaption h3 {
+  font-weight: 100;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  color: var(--colorWhite);
 }
